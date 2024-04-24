@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Fitness Tracker</h1>
+  </header>
+  <main>
+    <!-- Workout recording form -->
+    <form id="workoutForm">
+      <label for="exerciseType">Exercise Type:</label>
+      <input type="text" id="exerciseType" required>
+      <label for="duration">Duration (minutes):</label>
+      <input type="number" id="duration" required>
+      <button type="submit">Add Workout</button>
+    </form>
+    <!-- Goal setting section -->
+    <section id="goalSection">
+      <h2>Set Your Fitness Goals</h2>
+      <!-- Goal input fields -->
+      <label for="targetWeight">Target Weight:</label>
+      <input type="number" id="targetWeight">
+      <!-- Add more goal inputs as needed -->
+      <button id="setGoalsBtn">Set Goals</button>
+    </section>
+    <!-- Display workout history and progress -->
+    <section id="progressSection">
+      <h2>Workout History & Progress</h2>
+      <ul id="workoutList"></ul>
+      <!-- Display progress charts or graphs -->
+      <canvas id="progressChart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Fitness Tracker App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
